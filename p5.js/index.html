@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숭실대학교 과제 포트폴리오</title>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 { margin-bottom: 30px; }
+        
+        /* 2x2 격자 레이아웃 설정 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 가로 2칸 */
+            gap: 20px; /* 사이 간격 */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 각 과제 칸 디자인 */
+        .item {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* p5.js 화면을 불러오는 창 */
+        iframe {
+            width: 100%;
+            height: 400px; /* 높이 조절 가능 */
+            border: none;
+            overflow: hidden;
+        }
+
+        h3 { margin: 10px 0; }
+        
+        /* 모바일에서는 한 줄로 보이게 */
+        @media (max-width: 768px) {
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Global Media Assignment Portfolio</h1>
+
+    <div class="grid-container">
+        <div class="item">
+            <h3>Assignment 1</h3>
+            <iframe src="hw1/index.html" title="과제1"></iframe>
+        </div>
+        <div class="item">
+            <h3>Assignment 4</h3>
+            <iframe src="hw4/index.html" title="과제4"></iframe>
+        </div>
+
+        <div class="item">
+            <h3>Assignment 2</h3>
+            <iframe src="hw2/index.html" title="과제2"></iframe>
+        </div>
+        <div class="item">
+            <h3>Assignment 3</h3>
+            <iframe src="hw3/index.html" title="과제3"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
